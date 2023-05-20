@@ -9,6 +9,8 @@ const { formatCourse } = require("../helpers/formatCourse");
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::course.course", ({ strapi }) => ({
+  //find one course
+
   async find(ctx) {
     const params = await this.sanitizeQuery(ctx);
 

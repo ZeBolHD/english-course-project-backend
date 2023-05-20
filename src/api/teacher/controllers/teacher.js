@@ -9,10 +9,9 @@ const { formatTeacherData } = require("../helpers/formatTeacherData");
 const { createCoreController } = require("@strapi/strapi").factories;
 
 module.exports = createCoreController("api::teacher.teacher", ({ strapi }) => ({
+  //find one teacher
+
   async find(ctx) {
-    // const { data } = await super.find(ctx, {
-    //   populate: ["avatar", "achievements", "achievements.photo"],
-    // });
     const params = await this.sanitizeQuery(ctx);
 
     const populate = ["avatar", "achievements.", "achievements.image"];
@@ -26,13 +25,4 @@ module.exports = createCoreController("api::teacher.teacher", ({ strapi }) => ({
 
     return data;
   },
-  // async findOne(ctx) {
-  //   const params = await this.sanitizeQuery(ctx);
-  //   console.log(params);
-  //   const populate = ["avatar", "achievements.", "achievements.photo"];
-  //   const results = await strapi
-  //     .service("api::teacher.teacher")
-  //     .find({ params });
-  //   return results;
-  // },
 }));
