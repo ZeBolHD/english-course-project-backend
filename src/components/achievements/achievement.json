@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_achievements_achievements",
+  "info": {
+    "displayName": "achievement",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

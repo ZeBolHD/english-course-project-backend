@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "reviews_pages",
+  "info": {
+    "singularName": "reviews-page",
+    "pluralName": "reviews-pages",
+    "displayName": "ReviewsPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review"
+    }
+  }
+}
