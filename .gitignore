@@ -60,6 +60,9 @@ $RECYCLE.BIN/
 *.out
 *.pid
 
+data.db
+*.tar.gz.enc
+
 
 ############################
 # Logs and databases

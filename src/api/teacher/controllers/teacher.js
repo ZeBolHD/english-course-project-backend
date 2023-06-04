@@ -19,7 +19,6 @@ module.exports = createCoreController("api::teacher.teacher", ({ strapi }) => ({
     const { results } = await strapi
       .service("api::teacher.teacher")
       .find({ ...params, populate });
-    console.log(results);
 
     const data = formatTeacherData(results[0]);
 

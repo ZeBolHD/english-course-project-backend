@@ -2,7 +2,6 @@ const { formatImage } = require("../../../helpers/formatImage");
 const { formatAchievements } = require("./formatAchievement");
 
 const formatTeacherData = (data) => {
-  console.log(data);
   return {
     id: data.id,
     name: data.name,
