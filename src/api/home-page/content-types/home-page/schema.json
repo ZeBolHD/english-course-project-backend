@@ -37,6 +37,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::teacher.teacher"
+    },
+    "qas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::qa.qa"
     }
   }
 }

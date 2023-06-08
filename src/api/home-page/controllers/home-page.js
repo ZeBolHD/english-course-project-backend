@@ -13,11 +13,13 @@ module.exports = createCoreController(
     async find(ctx) {
       const populate = [
         "banner.",
-        "banner.image",
         "advantage_cards.",
         "advantage_cards.description",
         "hero.",
         "courses.",
+        "courses.image",
+        "courses.language_levels",
+        "qas",
         "teachers.",
         "teachers.avatar",
       ];
@@ -25,6 +27,8 @@ module.exports = createCoreController(
       let data = await strapi
         .service("api::home-page.home-page")
         .find({ populate });
+
+      console.log(data);
 
       data = formatHomePageData(data);
 
