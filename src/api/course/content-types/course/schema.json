@@ -47,16 +47,16 @@
     "price_taxless": {
       "type": "integer"
     },
-    "language_levels": {
-      "type": "component",
-      "repeatable": true,
-      "component": "language-levels.level"
-    },
     "intensity": {
       "type": "string"
     },
     "persons": {
       "type": "string"
+    },
+    "language_levels": {
+      "type": "component",
+      "repeatable": true,
+      "component": "courses-ui.language-level"
     }
   }
 }

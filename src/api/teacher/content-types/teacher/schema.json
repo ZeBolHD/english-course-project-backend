@@ -35,7 +35,13 @@
     "achievements": {
       "type": "component",
       "repeatable": true,
-      "component": "achievements.achievement"
+      "component": "teachers-ui.achievement"
+    },
+    "qualities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "teachers-ui.quality",
+      "max": 3
     }
   }
 }

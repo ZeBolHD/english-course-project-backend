@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_home_page_ui_advantages",
+  "info": {
+    "displayName": "AdvantageItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

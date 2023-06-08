@@ -10,7 +10,7 @@ const formatCourses = (data) => {
       hours: course.hours,
       price: course.price,
       price_taxless: course.price_taxless,
-      language_levels: course.language_levels.map((level) => level.level),
+      language_levels: course.language_levels.map((level) => level.text),
       intensity: course.intensity,
       persons: course.persons,
     };

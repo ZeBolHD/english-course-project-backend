@@ -14,7 +14,7 @@ module.exports = createCoreController(
       const populate = [
         "banner.",
         "advantage_cards.",
-        "advantage_cards.description",
+        "advantage_cards.items",
         "hero.",
         "courses.",
         "courses.image",
@@ -22,13 +22,12 @@ module.exports = createCoreController(
         "qas",
         "teachers.",
         "teachers.avatar",
+        "teachers.qualities",
       ];
 
       let data = await strapi
         .service("api::home-page.home-page")
         .find({ populate });
-
-      console.log(data);
 
       data = formatHomePageData(data);
 

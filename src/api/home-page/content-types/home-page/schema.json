@@ -22,17 +22,6 @@
       "relation": "oneToMany",
       "target": "api::advantage-card.advantage-card"
     },
-    "banner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "banner.banner",
-      "required": true
-    },
-    "hero": {
-      "type": "component",
-      "repeatable": false,
-      "component": "hero-text.hero-text"
-    },
     "teachers": {
       "type": "relation",
       "relation": "oneToMany",
@@ -42,6 +31,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::qa.qa"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page-ui.banner"
+    },
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page-ui.hero-section"
     }
   }
 }

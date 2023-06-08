@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_banner_banners",
+  "collectionName": "components_home_page_ui_banners",
   "info": {
     "displayName": "Banner",
     "description": ""
@@ -7,8 +7,7 @@
   "options": {},
   "attributes": {
     "text": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   }
 }

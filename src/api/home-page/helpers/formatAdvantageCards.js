@@ -1,8 +1,8 @@
-const formatAdvantageCards = (cardsData) => {
-  return cardsData.map((data) => {
+const formatAdvantageCards = (data) => {
+  return data.map((card) => {
     return {
-      name: data.name,
-      descriptions: data.description.map((item) => item.text),
+      name: card.name,
+      descriptions: card.items.map((item) => item.text),
     };
   });
 };

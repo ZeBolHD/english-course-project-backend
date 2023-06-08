@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_courses_ui_language_levels",
+  "info": {
+    "displayName": "LanguageLevel"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

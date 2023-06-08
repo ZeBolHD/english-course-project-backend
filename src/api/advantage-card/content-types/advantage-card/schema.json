@@ -4,7 +4,8 @@
   "info": {
     "singularName": "advantage-card",
     "pluralName": "advantage-cards",
-    "displayName": "AdvantageCard"
+    "displayName": "AdvantageCard",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,10 +15,10 @@
     "name": {
       "type": "string"
     },
-    "description": {
+    "items": {
       "type": "component",
       "repeatable": true,
-      "component": "description.description"
+      "component": "home-page-ui.advantage"
     }
   }
 }

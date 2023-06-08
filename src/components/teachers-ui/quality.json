@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_teachers_ui_qualities",
+  "info": {
+    "displayName": "Quality"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}
