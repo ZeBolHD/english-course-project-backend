@@ -41,6 +41,11 @@
       "type": "component",
       "repeatable": false,
       "component": "home-page-ui.hero-section"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review"
     }
   }
 }

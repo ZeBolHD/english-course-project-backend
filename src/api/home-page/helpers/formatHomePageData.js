@@ -6,6 +6,7 @@ const {
   formatSmallTeachersData,
 } = require("../../teachers-page/helpers/formatSmallTeachersData");
 const { formatQAs } = require("./formatQAs");
+const { formatReviews } = require("./formatReviews");
 
 const formatHomePageData = (data) => {
   const pathBanner = data.banner;
@@ -13,6 +14,7 @@ const formatHomePageData = (data) => {
   const pathAdvantageCards = data.advantage_cards;
   const pathTeachers = data.teachers;
   const pathCourses = data.courses;
+  const pathReviews = data.reviews;
   const pathQAs = data.qas;
 
   return {
@@ -21,6 +23,7 @@ const formatHomePageData = (data) => {
     advantage_cards: formatAdvantageCards(pathAdvantageCards),
     teachers: formatSmallTeachersData(pathTeachers),
     courses: formatCourses(pathCourses),
+    reviews: formatReviews(pathReviews),
     qas: formatQAs(pathQAs),
   };
 };
