@@ -22,7 +22,7 @@ const formatHomePageData = (data) => {
     hero: formatHero(pathHero),
     advantage_cards: formatAdvantageCards(pathAdvantageCards),
     teachers: formatSmallTeachersData(pathTeachers),
-    courses: formatCourses(pathCourses),
+    course_cards: formatCourses(pathCourses),
     reviews: formatReviews(pathReviews),
     qas: formatQAs(pathQAs),
   };
