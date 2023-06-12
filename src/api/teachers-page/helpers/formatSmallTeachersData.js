@@ -7,7 +7,7 @@ const formatSmallTeachersData = (data) => {
       name: item.name,
       slug: item.slug,
       avatar: formatImage(item.avatar),
-      qualities: item.qualities.map((item) => item.text),
+      qualities: item.qualities?.map((item) => item.text),
     };
   });
 };
