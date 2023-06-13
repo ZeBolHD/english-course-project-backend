@@ -46,6 +46,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::review.review"
+    },
+    "contacts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact.contact"
     }
   }
 }

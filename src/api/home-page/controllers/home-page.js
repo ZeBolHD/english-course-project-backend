@@ -24,6 +24,7 @@ module.exports = createCoreController(
         "teachers.avatar",
         "teachers.qualities",
         "reviews",
+        "contacts",
       ];
 
       let data = await strapi
