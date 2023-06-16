@@ -14,7 +14,7 @@ module.exports = createCoreController(
   "api::teachers-page.teachers-page",
   ({ strapi }) => ({
     async find(ctx) {
-      const populate = ["teachers.", "teachers.avatar"];
+      const populate = ["teachers.", "teachers.avatar", "teachers.qualities"];
 
       const data = await strapi
         .service("api::teachers-page.teachers-page")
