@@ -8,6 +8,7 @@ const {
 const { formatQAs } = require("./formatQAs");
 const { formatReviews } = require("./formatReviews");
 const { formatContacts } = require("./formatContacts");
+const { formatTrustedCompanies } = require("./formatTrustedCompanies");
 
 const formatHomePageData = (data) => {
   const pathBanner = data.banner;
@@ -18,6 +19,7 @@ const formatHomePageData = (data) => {
   const pathReviews = data.reviews;
   const pathQAs = data.qas;
   const pathContacts = data.contacts;
+  const pathTrustedCompanies = data.trusted_companies;
 
   return {
     banner: formatBanner(pathBanner),
@@ -28,6 +30,7 @@ const formatHomePageData = (data) => {
     reviews: formatReviews(pathReviews),
     qas: formatQAs(pathQAs),
     contacts: formatContacts(pathContacts),
+    trusted_companies: formatTrustedCompanies(pathTrustedCompanies),
   };
 };
 

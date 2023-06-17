@@ -51,6 +51,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::contact.contact"
+    },
+    "trusted_companies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trusted-company.trusted-company"
     }
   }
 }

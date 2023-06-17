@@ -23,8 +23,6 @@ module.exports = createCoreController("api::course.course", ({ strapi }) => ({
 
     const data = formatCourse(results[0]);
 
-    console.log(data);
-
     return data;
   },
 }));
