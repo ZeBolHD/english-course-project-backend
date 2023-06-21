@@ -1,6 +1,6 @@
 "use strict";
 
-const { formatSmallCoursesData } = require("../helpers/formatSmallCoursesData");
+const { formatCourses } = require("../helpers/formatCourses");
 
 /**
  * courses-page controller
@@ -12,15 +12,15 @@ module.exports = createCoreController(
   "api::courses-page.courses-page",
   ({ strapi }) => ({
     async find(ctx) {
-      const populate = ["image"];
+      const populate = ["courses.", "courses.image", "courses.language_levels"];
 
-      const { results } = await strapi.service("api::course.course").find({
+      const data = await strapi.service("api::courses-page.courses-page").find({
         populate,
       });
 
-      const data = formatSmallCoursesData(results);
+      const courses = formatCourses(data.courses);
 
-      return data;
+      return courses;
     },
   })
 );

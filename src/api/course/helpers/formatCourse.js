@@ -5,11 +5,14 @@ const formatCourse = (data) => {
     name: data.name,
     slug: data.slug,
     image: formatImage(data.image),
+    duration: data.duration,
+    start: data.start,
     hours: data.hours,
     price: data.price,
-    start: data.start,
-    duration: data.duration,
-    description: data.description,
+    price_taxless: data.price_taxless,
+    language_levels: data.language_levels.map((level) => level.text),
+    intensity: data.intensity,
+    persons: data.persons,
   };
 };
 

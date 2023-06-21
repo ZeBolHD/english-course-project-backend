@@ -1,7 +1,7 @@
 const { formatAdvantageCards } = require("./formatAdvantageCards");
 const { formatBanner } = require("./formatBanner");
 const { formatHero } = require("./formatHero");
-const { formatCourses } = require("./formatCourses");
+const { formatCourses } = require("../../courses-page/helpers/formatCourses");
 const {
   formatSmallTeachersData,
 } = require("../../teachers-page/helpers/formatSmallTeachersData");

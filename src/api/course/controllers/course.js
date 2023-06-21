@@ -14,15 +14,15 @@ module.exports = createCoreController("api::course.course", ({ strapi }) => ({
   async find(ctx) {
     const params = await this.sanitizeQuery(ctx);
 
-    const populate = ["image"];
+    const populate = ["image", "language_levels"];
 
     const { results } = await strapi.service("api::course.course").find({
       populate,
       ...params,
     });
 
-    const data = formatCourse(results[0]);
+    const course = formatCourse(results[0]);
 
-    return data;
+    return course;
   },
 }));

@@ -12,18 +12,29 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "fullNameParent": {
+      "type": "text"
+    },
+    "fullNameChild": {
+      "type": "text"
     },
     "email": {
       "type": "email"
     },
-    "description": {
-      "type": "text"
+    "phoneParent": {
+      "type": "string"
     },
-    "phone": {
-      "type": "string",
-      "required": true
+    "school": {
+      "type": "integer"
+    },
+    "grade": {
+      "type": "integer"
+    },
+    "mark": {
+      "type": "integer"
+    },
+    "comment": {
+      "type": "text"
     }
   }
 }

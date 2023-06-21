@@ -4,7 +4,7 @@
  * teacher controller
  */
 
-const { formatTeacherData } = require("../helpers/formatTeacherData");
+const { formatTeacher } = require("../helpers/formatTeacher");
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
@@ -20,8 +20,8 @@ module.exports = createCoreController("api::teacher.teacher", ({ strapi }) => ({
       .service("api::teacher.teacher")
       .find({ ...params, populate });
 
-    const data = formatTeacherData(results[0]);
+    const teacher = formatTeacher(results[0]);
 
-    return data;
+    return teacher;
   },
 }));
