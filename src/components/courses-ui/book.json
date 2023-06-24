@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_courses_ui_books",
+  "info": {
+    "displayName": "Book"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

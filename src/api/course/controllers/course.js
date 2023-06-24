@@ -14,7 +14,7 @@ module.exports = createCoreController("api::course.course", ({ strapi }) => ({
   async find(ctx) {
     const params = await this.sanitizeQuery(ctx);
 
-    const populate = ["image", "language_levels"];
+    const populate = ["image", "language_levels", "books"];
 
     const { results } = await strapi.service("api::course.course").find({
       populate,

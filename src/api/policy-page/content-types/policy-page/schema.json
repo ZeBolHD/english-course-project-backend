@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "policy_pages",
+  "info": {
+    "singularName": "policy-page",
+    "pluralName": "policy-pages",
+    "displayName": "PolicyPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "policies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::policy.policy"
+    }
+  }
+}

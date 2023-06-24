@@ -4,7 +4,7 @@ const formatCourse = (data) => {
   return {
     name: data.name,
     slug: data.slug,
-    image: formatImage(data.image),
+    image: data.image && formatImage(data.image),
     duration: data.duration,
     start: data.start,
     hours: data.hours,
@@ -13,6 +13,8 @@ const formatCourse = (data) => {
     language_levels: data.language_levels.map((level) => level.text),
     intensity: data.intensity,
     persons: data.persons,
+    books: data.books.map((item) => item.name),
+    description: data.description,
   };
 };
 

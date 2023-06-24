@@ -5,7 +5,7 @@ const formatCourses = (data) => {
     return {
       name: course.name,
       slug: course.slug,
-      image: formatImage(course.image),
+      image: course.image && formatImage(course.image),
       duration: course.duration,
       start: course.start,
       hours: course.hours,
