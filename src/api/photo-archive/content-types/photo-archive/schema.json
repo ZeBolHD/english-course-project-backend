@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photo_archives",
+  "info": {
+    "singularName": "photo-archive",
+    "pluralName": "photo-archives",
+    "displayName": "PhotoArchive"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
