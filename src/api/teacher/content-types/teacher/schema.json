@@ -17,7 +17,8 @@
       "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "avatar": {
       "type": "media",
@@ -41,7 +42,9 @@
       "type": "component",
       "repeatable": true,
       "component": "teachers-ui.quality",
-      "max": 3
+      "max": 3,
+      "required": true,
+      "min": 3
     }
   }
 }

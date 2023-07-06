@@ -35,6 +35,9 @@
     },
     "comment": {
       "type": "text"
+    },
+    "testScore": {
+      "type": "integer"
     }
   }
 }

@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "link": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

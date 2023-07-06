@@ -13,12 +13,14 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "items": {
       "type": "component",
       "repeatable": true,
-      "component": "home-page-ui.advantage"
+      "component": "home-page-ui.advantage",
+      "required": true
     }
   }
 }

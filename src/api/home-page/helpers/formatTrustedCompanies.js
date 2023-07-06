@@ -1,8 +1,8 @@
-const { formatSmallImage } = require("../../../helpers/formatSmallImage");
+const { formatImage } = require("../../../helpers/formatImage");
 
 const formatTrustedCompanies = (data) => {
   return data.map((company) => {
-    return formatSmallImage(company.image);
+    return formatImage(company.image);
   });
 };
 

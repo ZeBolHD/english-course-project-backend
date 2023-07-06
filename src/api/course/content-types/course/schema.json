@@ -30,28 +30,36 @@
       ]
     },
     "price": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "duration": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "hours": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": false
     },
     "start": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "price_taxless": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "intensity": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "persons": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "language_levels": {
       "type": "component",
