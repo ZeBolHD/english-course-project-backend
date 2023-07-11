@@ -24,9 +24,6 @@
     "phoneParent": {
       "type": "string"
     },
-    "school": {
-      "type": "integer"
-    },
     "grade": {
       "type": "integer"
     },
@@ -38,6 +35,9 @@
     },
     "testScore": {
       "type": "integer"
+    },
+    "school": {
+      "type": "string"
     }
   }
 }
