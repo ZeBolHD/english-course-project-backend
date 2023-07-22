@@ -20,6 +20,10 @@ module.exports = createCoreController("api::teacher.teacher", ({ strapi }) => ({
       .service("api::teacher.teacher")
       .find({ ...params, populate });
 
+    if (!results.length) {
+      return null;
+    }
+
     const teacher = formatTeacher(results[0]);
 
     return teacher;

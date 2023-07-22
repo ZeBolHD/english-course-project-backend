@@ -13,6 +13,8 @@ module.exports = createCoreController(
     async find(ctx) {
       const populate = [
         "banner.",
+        "articles",
+        "articles.image",
         "advantage_cards.",
         "advantage_cards.items",
         "hero.",

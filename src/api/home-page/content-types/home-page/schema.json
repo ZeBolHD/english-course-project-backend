@@ -56,6 +56,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::trusted-company.trusted-company"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
     }
   }
 }

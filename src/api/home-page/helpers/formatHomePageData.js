@@ -9,10 +9,12 @@ const { formatQAs } = require("./formatQAs");
 const { formatReviews } = require("./formatReviews");
 const { formatContacts } = require("./formatContacts");
 const { formatTrustedCompanies } = require("./formatTrustedCompanies");
+const { formatNews } = require("../../article/helpers/formatNews");
 
 const formatHomePageData = (data) => {
   const pathBanner = data.banner;
   const pathHero = data.hero;
+  const pathArticles = data.articles;
   const pathAdvantageCards = data.advantage_cards;
   const pathTeachers = data.teachers;
   const pathCourses = data.courses;
@@ -24,6 +26,7 @@ const formatHomePageData = (data) => {
   return {
     banner: formatBanner(pathBanner),
     hero: formatHero(pathHero),
+    articles: formatNews(pathArticles),
     advantage_cards: formatAdvantageCards(pathAdvantageCards),
     teachers: formatSmallTeachersData(pathTeachers),
     courses: formatCourses(pathCourses),

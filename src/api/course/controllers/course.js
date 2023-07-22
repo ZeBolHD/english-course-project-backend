@@ -21,7 +21,7 @@ module.exports = createCoreController("api::course.course", ({ strapi }) => ({
       ...params,
     });
 
-    if (results.length === 0) {
+    if (!results.length) {
       return null;
     }
 

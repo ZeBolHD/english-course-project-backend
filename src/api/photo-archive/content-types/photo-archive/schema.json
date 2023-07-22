@@ -4,20 +4,21 @@
   "info": {
     "singularName": "photo-archive",
     "pluralName": "photo-archives",
-    "displayName": "PhotoArchive"
+    "displayName": "PhotoArchive",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "photo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
