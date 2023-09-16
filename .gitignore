@@ -116,3 +116,6 @@ exports
 dist
 build
 .strapi-updater.json
+bun.lockb
+.prettierrc
+.yaml
